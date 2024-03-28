@@ -8,7 +8,9 @@
         <outputRelativeToContentRoot value="true" />
         <module name="api-gateway" />
         <module name="config-server" />
+        <module name="servidorpublico-microservice" />
         <module name="service-registry" />
+        <module name="curso-microservice" />
       </profile>
     </annotationProcessing>
   </component>
@@ -16,7 +18,9 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="api-gateway" options="-parameters" />
       <module name="config-server" options="-parameters" />
+      <module name="curso-microservice" options="-parameters" />
       <module name="service-registry" options="-parameters" />
+      <module name="servidorpublico-microservice" options="-parameters" />
     </option>
   </component>
 </project>
