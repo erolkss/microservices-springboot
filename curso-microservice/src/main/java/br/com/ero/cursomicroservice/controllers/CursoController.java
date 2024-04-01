@@ -84,7 +84,7 @@ public class CursoController implements CursoAPIRest {
     }
 
     @Override
-    @GetMapping("/servidorpublico/listarServidores/{idcurso}")
+    @GetMapping("/listarServidores/{idcurso}")
     public ResponseEntity<List<ServidorPublico>> listarServidoresCurso(@PathVariable Long idcurso) {
         List<ServidorPublico> servidores = cursoService.listarServidoresCurso(idcurso);
         if (!servidores.isEmpty()) {

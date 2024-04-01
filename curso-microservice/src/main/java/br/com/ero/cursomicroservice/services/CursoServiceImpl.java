@@ -17,8 +17,11 @@ public class CursoServiceImpl implements  CursoService{
     @Autowired
     private CursoRepository cursoRepository;
 
-    @Autowired
-    private ServidorPublicoServiceClient servidorPublicoServiceClient;
+    private final ServidorPublicoServiceClient servidorPublicoServiceClient;
+
+    public CursoServiceImpl(ServidorPublicoServiceClient servidorPublicoServiceClient){
+        this.servidorPublicoServiceClient = servidorPublicoServiceClient;
+    }
 
     @Override
     public List<Curso> listAll() {
